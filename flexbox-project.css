@@ -59,6 +59,33 @@ body {
 }
 
 .team__container a {
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+/* phase 3 */
+
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
 }
 
 @media screen and (max-width: 730px) {
@@ -66,6 +93,37 @@ body {
   #boards span {
     display: none;
   }
+}
+
+@media screen and (min-width:501px) {
+  .tabbed-nav__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group,
+  .tabbed-nav__link {
+    display: block;
+  }
+}
+
+/* Phase 4 */
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.boards__sidebar {
+  background-color: #6c547b;
+  border-radius: 3px;
 }
 
 /* Supplied CSS follows. */
