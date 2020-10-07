@@ -1,6 +1,7 @@
 /* Write your CSS here. */
 body {
-  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   font-size: 14px;
   margin: 0px;
 }
@@ -18,28 +19,54 @@ body {
 
 #left-group > .header-nav__link {
   padding: 2px;
-  margin: 2px;  
+  margin: 2px;
 }
 
+#middle-group {
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+}
 
+#right-group > .header-nav__link {
+  padding: 2px;
+  margin: 2px;
+}
 
+#alerts {
+  background-color: #cf513d;
+}
 
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
 
+.team__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
 
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
 
+.team__container a {
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 730px) {
+  #search,
+  #boards span {
+    display: none;
+  }
+}
 
 /* Supplied CSS follows. */
 .header-nav__button {
@@ -50,14 +77,14 @@ body {
   text-decoration: none;
   align-items: center;
   text-align: center;
-  background-color: hsla(0,0%,100%,.3);
+  background-color: hsla(0, 0%, 100%, 0.3);
   box-shadow: none;
   color: #fff;
   height: 32px;
   line-height: 32px;
   margin: 0 4px 0 0;
   padding: 0;
-  transition: .1s ease;
+  transition: 0.1s ease;
   white-space: nowrap;
   padding: 8px;
   height: 32px;
